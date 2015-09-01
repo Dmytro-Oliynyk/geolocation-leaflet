@@ -1,0 +1,38 @@
+<md-dialog>
+    <md-toolbar>
+	    <div class="md-toolbar-tools">
+	      <h2>Location information</h2>
+	      <span flex></span>
+	      <md-button class="md-icon-button" ng-click="cancel()">
+	       <span class="glyphicon glyphicon-remove"></span>
+	      </md-button>
+	    </div>
+  	</md-toolbar>
+	<md-dialog-content  layout-padding style="autoScroll;">
+	<md-input-container flex="">
+	        <label>Center zoom</label>
+        	<input type="number" step="any"  ng-model="center.zoom" placeholder="Center Zoom">
+      	</md-input-container>
+      	<md-input-container flex="">
+      		<label>Center Lat</label>
+        	<input type="number" step="any"  ng-model="center.lat" placeholder="Center Lat">
+      	</md-input-container>
+      	<md-input-container flex="">
+      		<label>Center Lng {{isDisable}}</label>
+	      	<input type="number" step="any"  ng-model="center.lng" placeholder="Center Lng">
+      	</md-input-container>
+      	
+      	<md-input-container md-no-float>
+      		<md-icon md-svg-src="img/ic_place_24px.svg" style="display:inline-block;"></md-icon>
+      		<input ng-model="position.message" type="text" placeholder="Address" >
+       	</md-input-container>
+	    <md-input-container flex="">
+	       <div id="geolocation"></div> 
+      	</md-input-container>
+    </md-dialog-content>
+	<div class="md-actions" layout="row">
+		<md-button  target="_blank" ng-click="locationInfo()">Find me</md-button>
+		<md-button target="_blank" ng-disabled="isDisable()" ng-click="apply()"  class="md-raised">Show on map </md-button>
+		<md-button ng-click="cancel()">Cancel</md-button>
+	</div>
+</md-dialog>

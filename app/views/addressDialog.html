@@ -1,0 +1,21 @@
+<md-dialog>
+    <md-toolbar>
+	    <div class="md-toolbar-tools">
+	      <h2>Address form</h2>
+	      <span flex></span>
+	      <md-button class="md-icon-button" ng-click="cancel()">
+	       <span class="glyphicon glyphicon-remove"></span>
+	      </md-button>
+	    </div>
+  	</md-toolbar>
+	<md-dialog-content style="max-width:800px;max-height:810px; ">
+	    <md-input-container flex="">
+	       <md-icon md-svg-src="img/ic_place_24px.svg" style="display:inline-block;"></md-icon>
+        	<input ng-model="address" placeholder="Address">
+      	</md-input-container>
+    </md-dialog-content>
+	<div class="md-actions" layout="row">
+		<md-button  target="_blank"ng-click="search()">Find</md-button>
+		<md-button ng-click="cancel()" style="margin-right:20px;">Cancel</md-button>
+	</div>
+</md-dialog>

@@ -1,0 +1,32 @@
+<form class="form-inline ng-valid ng-dirty ng-valid-number" role="form">
+	<div class="control-group">
+	<label ="control-label">Center</label>
+		<div class="form-group">
+			<div class="input-group">
+			   	<span class='input-group-addon'>zoom</span>
+			   	<input form-control ng-valid ng-dirty ng-valid-number ng-touched type="number" ng-model="center.zoom"></input>
+			</div>
+			<div class="input-group">
+			   	<span class='input-group-addon'>lat</span>
+			   	<input form-control ng-valid ng-dirty ng-valid-number ng-touched type="number" step="any" ng-model="center.lat"></input>
+			</div>
+			<div class="input-group">
+			   	<span class='input-group-addon'>lng</span>
+			   	<input form-control ng-valid ng-dirty ng-valid-number ng-touched type="number" step="any" ng-model="center.lng"></input>
+			</div>
+		</div>
+		<hr>
+		<div class="form-group">
+			<div class="input-group">
+			   	<span class='input-group-addon'>Message for my position</span>
+			   	<input form-control type="text"ng-model="myPosition.message"></input>
+			</div>
+			<div class="input-group">
+			   	<span class='input-group-addon'>Change my marker icon</span>
+			   	<input form-control ng-valid ng-dirty ng-touched type="radio" ng-model="myPosition.icon" ng-value="local_icons.div_icon">div_icon</input>
+			   	<input form-control ng-valid ng-dirty ng-touched type="radio" ng-model="myPosition.icon" ng-value="local_icons.leaf_icon">leaf_icon</input>
+			</div>
+		</div>
+	</div>
+	 <md-button class="md-primary md-raised" ng-click="showAlert($event)" flex="" flex-md="100"> Event info</md-button>
+</form>

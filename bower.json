@@ -1,0 +1,23 @@
+{
+  "name": "near-me-leaflet",
+  "version": "0.0.1",
+  "authors": [
+    "Dmytro_Oliinyk"
+  ],
+  "description": "near-me-leaflet",
+   "license": "MIT",
+   "private": true,
+  "dependencies": {
+    "normalize.css": "*",
+    "jquery": "2.*",
+    "angular": "latest",
+    "bootstrap": "~3.1.1",
+    "leaflet":"latest",
+    "angular-leaflet-directive":"latest",
+    "angular-route": "1.4.x",
+    "angular-resource": "1.4.x",
+    "angular-animate": "1.4.x",
+    "angular-material": "latest",
+    "leaflet-plugins":"*"
+  }
+}

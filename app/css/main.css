@@ -1,0 +1,94 @@
+html, body, #map_canvas {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.header {
+  background-color: rgba(0,0,0,0.3);
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+  line-height: 37px;
+}
+
+.header .container-fluid {
+  position: relative;
+}
+
+.header h1 {
+  color: #fff;
+  font-size: 16px;
+  letter-spacing: 1.2px;    
+  margin: 0;
+  padding: 10px 0 10px 55px;
+  text-transform: uppercase;
+}
+
+.header a {
+  padding-right: 20px;
+  color: #fff;
+}
+
+.container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+#map_canvas {
+  position: relative;
+}
+
+.angular-leaflet-map {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.about .btn {
+    font-weight: 600;
+    border-radius: 0;
+    padding: 16px 26px;
+    font-size: 16px;
+}
+
+.form-inline{
+  height: 28%;
+  width: 300px;
+}
+
+#btn{
+  position: absolute;
+  top: 54px;
+  bottom: 0;
+  right: 0;
+  left: -5px;
+}
+
+form{
+  position: absolute;
+  bottom: 0%;
+  margin : 0 auto;
+}
+
+.legend {
+    padding: 6px 8px;
+    font: 14px/16px Arial, Helvetica, sans-serif;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    background: rgba(255,255,255, 0.9);
+    line-height: 18px;
+    border-radius: 5px;
+    color: #555;
+}
+
+.legend i {
+    color: #777;
+    width: 18px;
+    height: 18px;
+    float: left;
+    margin-right: 8px;
+    opacity: 0.7;
+}
