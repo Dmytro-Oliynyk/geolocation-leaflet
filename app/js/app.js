@@ -1,4 +1,4 @@
-var app = angular.module('NearMeApp', ['leaflet-directive','ngRoute','ngAnimate','ngMaterial' ]);
+var app = angular.module('NearMeApp', ['nemLogging','leaflet-directive','ngRoute','ngAnimate','ngMaterial' ]);
 app.config(function($routeProvider){
 	$routeProvider
   	.when('/map',{
